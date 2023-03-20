@@ -5,10 +5,10 @@ import InputField from "../components/InputField";
 import Options from "../components/Options";
 import Items from "../components/Items";
 
-export default function Home() {
+export default function Home({ navigation }) {
   return (
     <SafeAreaView>
-      <InputField />
+      <InputField navigation={navigation} />
       <Options />
       <Items />
     </SafeAreaView>

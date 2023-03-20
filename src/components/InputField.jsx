@@ -2,11 +2,17 @@ import { View, Text, TextInput } from "react-native";
 import React from "react";
 import Icon from "react-native-vector-icons/FontAwesome5";
 
-export default function InputField() {
+export default function InputField({ navigation }) {
   return (
     <View className="flex-row gap-10 items-center justify-around py-2 px-10">
       <View className="">
-        <Icon name="chevron-left" size={25} />
+        <Icon
+          name="chevron-left"
+          size={25}
+          onPress={() => {
+            navigation.pop();
+          }}
+        />
       </View>
       <View className="flex-row ">
         <TextInput

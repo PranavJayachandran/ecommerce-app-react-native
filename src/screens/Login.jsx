@@ -4,11 +4,11 @@ import Header from "../components/Header";
 import Banner from "../components/Banner";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-export default function Login() {
+export default function Login({ navigation }) {
   return (
     <SafeAreaView>
       <Header />
-      <Banner />
+      <Banner navigation={navigation} />
     </SafeAreaView>
   );
 }
